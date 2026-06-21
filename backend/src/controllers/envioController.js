@@ -1,14 +1,6 @@
 const { Op } = require('sequelize');
 const { Repartidor, Zona, Envio } = require('../models');
 
-/**
- * GET /api/envios/costos?fechaInicio=YYYY-MM-DD&fechaFin=YYYY-MM-DD
- *
- * Lógica del cálculo (Controller):
- * 1. Por cada repartidor, filtrar sus envíos cuya fecha_envio esté en el rango.
- * 2. Por cada envío: peso_kg * tarifa_por_kg de su zona.
- * 3. Costo total del repartidor = suma de todos esos productos.
- */
 exports.calcularCostos = async (req, res) => {
   try {
     const { fechaInicio, fechaFin } = req.query;

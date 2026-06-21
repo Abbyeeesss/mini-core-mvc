@@ -1,8 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
 
-// Tabla: Zonas
-// Cada zona define cuánto cuesta entregar 1 kg en esa zona.
 const Zona = sequelize.define(
   'Zona',
   {

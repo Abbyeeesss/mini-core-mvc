@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
 
-// Tabla: Repartidor
 const Repartidor = sequelize.define(
   'Repartidor',
   {

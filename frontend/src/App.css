@@ -1,5 +1,3 @@
-/* Estilos súper simples y minimalistas (sin colores ni adornos) */
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin: 0;
@@ -33,7 +31,7 @@ body {
 }
 
 .eyebrow {
-  display: none; /* Ocultamos la etiqueta decorativa */
+  display: none;
 }
 
 .contenido {
@@ -43,7 +41,6 @@ body {
   align-items: center;
 }
 
-/* --- Formulario --- */
 .filtro-form {
   display: flex;
   flex-direction: column;
@@ -97,7 +94,6 @@ body {
   cursor: not-allowed;
 }
 
-/* --- Estados --- */
 .estado-error {
   color: #ff0000;
   font-weight: bold;
@@ -117,7 +113,6 @@ body {
   text-align: center;
 }
 
-/* --- Tabla --- */
 .tabla-wrapper {
   margin-top: 20px;
   width: 100%;
@@ -149,8 +144,6 @@ body {
   font-weight: bold;
   background-color: #f2f2f2;
 }
-
-
 
 @media (max-width: 540px) {
   .filtro-form {
