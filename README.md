@@ -68,4 +68,5 @@ Abre `http://localhost:5173`, elige un rango de fechas y presiona **Calcular cos
 ## 5. Información
 
 - **Video explicativo:** _pendiente_
-- **Proyecto deployado:** _pendiente_
+- **Proyecto deployado:** https://mini-core-mvc.vercel.app/
+

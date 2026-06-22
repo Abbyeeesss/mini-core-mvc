@@ -20,7 +20,7 @@ function App() {
     } catch (err) {
       console.error(err);
       setError(
-        'No se pudo obtener la información. Verifica que el backend esté corriendo y conectado a Supabase.'
+        'No se pudo obtener la información'
       );
       setDatos(null);
     } finally {
@@ -38,14 +38,6 @@ function App() {
         <DateFilterForm onBuscar={handleBuscar} cargando={cargando} />
 
         {error && <p className="estado-error">{error}</p>}
-
-        {!error && rangoConsultado && (
-          <p className="rango-info">
-            Mostrando envíos entregados entre{' '}
-            <strong>{rangoConsultado.fechaInicio}</strong> y{' '}
-            <strong>{rangoConsultado.fechaFin}</strong>
-          </p>
-        )}
 
         <ResultsTable datos={datos} />
       </main>
